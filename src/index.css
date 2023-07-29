@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  overflow-x: hidden;
+  font-family: 'Orbitron';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  color: inherit;
+  text-decoration: none;
+}
+button, input{
+  color: inherit;
+  font-family: inherit;
+}
+
+.wrap{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media ( max-width: 650px ){
+  html{
+    font-size: 12px;
+  }
+  .wrap{
+    padding: 0 24px;
+  }
 }

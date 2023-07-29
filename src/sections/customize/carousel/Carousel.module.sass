@@ -1,0 +1,37 @@
+.image
+    width: calc(100% - 22px)
+    height: calc(100% - 22px)
+    background: 50%/cover no-repeat
+    &__wrap
+        width: 196px
+        height: 125px
+        border-radius: 20px
+        background: #3B3D4600
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: .3s
+        cursor: pointer
+        @media ( max-width: 580px )
+            width: 140px
+            height: 90px
+        @media ( max-width: 430px )
+            width: 160px
+            height: 100px
+        @media ( max-width: 360px )
+            width: 140px
+            height: 90px
+        @media ( max-width: 330px )
+            width: 196px
+            height: 125px
+            margin: 0 auto
+        &:hover
+            background: #3B3D46
+    &_one
+        background-image: url('./../../../assets/1.png')
+    &_two
+        background-image: url('./../../../assets/2.png')
+    &_three
+        background-image: url('./../../../assets/3.png')
+    &_four
+        background-image: url('./../../../assets/4.png')
